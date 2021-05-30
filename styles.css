@@ -94,7 +94,7 @@ body {
 }
 @media only screen and (max-width: 375px) {
   body {
-    background: -2200vw -95vh no-repeat url(images/bg-pattern-top.svg),
+    background: -220vw -95vh no-repeat url(images/bg-pattern-top.svg),
       50vw 50vh no-repeat url(images/bg-pattern-bottom.svg), var(--Dark-cyan);
   }
 }
