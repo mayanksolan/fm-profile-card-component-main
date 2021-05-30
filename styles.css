@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --Dark-cyan: hsl(185, 75%, 39%);
+  --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --Dark-grayish-blue: hsl(227, 10%, 46%);
+  --Dark-gray: hsl(0, 0%, 59%);
+  --white: hsl(0, 0%, 100%);
+}
+body {
+  margin: 0;
+  font-family: "Kumbh Sans", sans-serif;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-size: 18px;
+  background: -15vw -70vh no-repeat url(images/bg-pattern-top.svg),
+    50vw 50vh no-repeat url(images/bg-pattern-bottom.svg), var(--Dark-cyan);
+}
+.card-wrapper {
+  margin: auto;
+  width: 350px;
+  height: 20%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.card-image {
+  width: 350px;
+  height: 140px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.card-icon {
+  border-radius: 50%;
+  width: 30%;
+  position: absolute;
+  top: 25%;
+  left: 35%;
+  border: 5px solid var(--white);
+}
+.card-text {
+  background-color: var(--white);
+  color: var(--Very-dark-desaturated-blue);
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.text-name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 70px;
+  padding-bottom: 20px;
+  font-weight: bold;
+  line-height: 130%;
+  border-bottom: 1px solid lightgray;
+}
+.name span {
+  color: var(--Dark-grayish-blue);
+  font-weight: normal;
+}
+.city {
+  font-size: 14px;
+  color: var(--Dark-gray);
+  font-weight: normal;
+}
+.social {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+.social-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 10px;
+}
+.social-numbers {
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+.social-text {
+  font-size: 12px;
+  color: var(--Dark-gray);
+  letter-spacing: 2px;
+}
+@media only screen and (max-width: 375px) {
+  body {
+    background: -2200vw -95vh no-repeat url(images/bg-pattern-top.svg),
+      50vw 50vh no-repeat url(images/bg-pattern-bottom.svg), var(--Dark-cyan);
+  }
+}
